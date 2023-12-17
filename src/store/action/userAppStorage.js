@@ -88,14 +88,14 @@ export const checkIfAdminIsLoggedIn = () => {
       }
     //http://localhostll:9090
     //https://brooker-backendll.onrender.com
-//http://localhost:9090
+//https://brooker-admin-backend.onrender.com
 
-    //http://localhost:9090
+    //https://brooker-admin-backend.onrender.com
 
-    http://localhost:9090
+    https://brooker-admin-backend.onrender.com
 
-  //http://localhost:9090
-      response = await fetch(`http://localhost:9090/adminbytoken`, {
+  //https://brooker-admin-backend.onrender.com
+      response = await fetch(`https://brooker-admin-backend.onrender.com/adminbytoken`, {
         method: "GET",
         headers:{
           "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch('http://localhost:9090/adminlogin', {
+      let response = await fetch('https://brooker-admin-backend.onrender.com/adminlogin', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -177,7 +177,7 @@ export const signupAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`http://localhost:9090/adminsignup`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -236,8 +236,8 @@ export const signupAdmin = (data) => {
     }
   }
 }
-//http://localhost:9090
-//http://localhost:9090
+//https://brooker-admin-backend.onrender.com
+//https://brooker-admin-backend.onrender.com
 export const fetchUsers = ()=>{
   return async (dispatch, getState) => {
     let {
@@ -245,7 +245,7 @@ export const fetchUsers = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/users`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/users`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -297,7 +297,7 @@ export const deleteUser = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/users/${id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/users/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -349,7 +349,7 @@ export const updateUser = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/users/${data._id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/users/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -405,7 +405,7 @@ export const fetchDeposits = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/deposits`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/deposits`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -457,7 +457,7 @@ export const deleteDeposit = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/deposits/${id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/deposits/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -509,7 +509,7 @@ export const updateDeposit = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/deposits/${data._id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/deposits/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -566,7 +566,7 @@ export const fetchWithdraws = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/withdraws`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/withdraws`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -617,7 +617,7 @@ export const deleteWithdraw = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/withdraws/${id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/withdraws/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -668,7 +668,7 @@ export const updateWithdraw = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/withdraws/${data._id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/withdraws/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -729,7 +729,7 @@ export const fetchTrades = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/trades`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/trades`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -780,7 +780,7 @@ export const deleteTrade = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/trades/${id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/trades/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -831,7 +831,7 @@ export const updateTrade = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/trades/${data._id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/trades/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -884,7 +884,7 @@ export const createTrade = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/trades`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/trades`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -944,7 +944,7 @@ export const updateAdmin = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`http://localhost:9090/admin/${data._id}`, {
+      let response = await fetch(`https://brooker-admin-backend.onrender.com/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
