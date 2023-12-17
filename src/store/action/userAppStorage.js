@@ -86,14 +86,7 @@ export const checkIfAdminIsLoggedIn = () => {
       if (!admin) {
         return
       }
-    //http://localhostll:9090
-    //https://brooker-backendll.onrender.com
-//https://brooker-admin-backend.onrender.com
-
-    //https://brooker-admin-backend.onrender.com
-
-    https://brooker-admin-backend.onrender.com
-
+   
   //https://brooker-admin-backend.onrender.com
       response = await fetch(`https://brooker-admin-backend.onrender.com/adminbytoken`, {
         method: "GET",
