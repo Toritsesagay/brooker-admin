@@ -60,21 +60,12 @@ function App() {
 
 
 
-
-
-
           <Route path='/admindashboard/deposits' element={adminToken ? <AdminDeposits status={false} /> : <AdminLogin />} />
           <Route path='/admindashboard/deposits/:id' element={adminToken ? <AdminEditDeposit status={true} /> : <AdminLogin />} />
 
 
-
-
-
-
           <Route path='/admindashboard/withdraws' element={adminToken ? <AdminWithdraws status={false} /> : <AdminLogin />} />
           <Route path='/admindashboard/withdraw/:id' element={adminToken ? <AdminEditWithdraw status={true} /> : <AdminLogin />} />
-
-
 
 
           <Route path='/admindashboard/trades' element={adminToken ? <AdminTrades status={false} /> : <AdminLogin />} />
